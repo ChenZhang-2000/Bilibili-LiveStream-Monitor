@@ -43,7 +43,7 @@ class Monitor:
                         self.bc_id.add(bc_id)
                         print('礼物  ', end='')
                         print(data['uname'] + ': ' + data['giftName'])
-                    if data['combo_send'] is not None:
+                        # print(self.bc_id)
                         await asyncio.sleep(5)
                         try:
                             self.bc_id.remove(bc_id)
